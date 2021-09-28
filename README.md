@@ -2,7 +2,7 @@
 challenge in PHP backend
 
 
-<strong>Usage :</strong>
+<strong>Usage is via Simple Rest API :</strong>
 
 • Start ``Xampp`` Server.
 
