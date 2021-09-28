@@ -1,2 +1,13 @@
-# back-end-challenge
+# Back-end-challenge
 challenge in PHP backend
+
+
+<strong>Usage :</strong>
+
+• Start ``Xampp`` Server.
+
+• Open via `` localhost/cart.php?product= ``.
+
+•  Example 1 `` cart.php?product=T-shirt+Blouse+Pants+Shoes+Jacket ``.
+
+•  Example 2 `` cart.php?product=Shoes ``.
