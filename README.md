@@ -8,6 +8,6 @@ challenge in PHP backend
 
 • Open via `` localhost/cart.php?product= ``.
 
-•  Example 1 `` cart.php?product=T-shirt+Blouse+Pants+Shoes+Jacket ``.
+•  Example 1 `` localhost/cart.php?product=T-shirt+Blouse+Pants+Shoes+Jacket ``.
 
-•  Example 2 `` cart.php?product=Shoes ``.
+•  Example 2 `` localhost/cart.php?product=Shoes ``.
