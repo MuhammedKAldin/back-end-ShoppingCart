@@ -1,0 +1,65 @@
+{
+	"region":{
+		"US":2,
+		"UK":3,
+		"CN":2
+	},
+	"product": {
+		"T-shirt": {
+			"category":"tops",
+			"price":30.99,
+			"region":"US",
+			"weight":0.2,
+			"discountExist":false,
+			"discount":0
+		},
+		"Blouse": {
+			"category":"tops",
+			"price":10.99,
+			"region":"UK",
+			"weight":0.3,
+			"discountExist":false,
+			"discount":0
+		},
+		"Pants": {
+			"category":"bottoms",
+			"price":64.99,
+			"region":"UK",
+			"weight":0.9,
+			"discountExist":false,
+			"discount":0
+		},
+		"Sweatpants": {
+			"category":"bottoms",
+			"price":84.99,
+			"region":"CN",
+			"weight":1.1,
+			"discountExist":false,
+			"discount":0
+		},
+		"Jacket": {
+			"category":"jackets",
+			"price":199.99,
+			"region":"US",
+			"weight":2.2,
+			"discountExist":true,
+			"discount":0.50
+		},
+		"Shoes": {
+			"category":"footwears",
+			"price":79.99,
+			"region":"CN",
+			"weight":1.3,
+			"discountExist":true,
+			"discount":0.10
+		},
+		"multipleProducts":{
+			"discountExist":true,
+			"discount":10
+		}
+	}
+	
+	
+}
+
+	
