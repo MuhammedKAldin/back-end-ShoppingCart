@@ -2,25 +2,31 @@
 // test : http://localhost/pape/cart.php?product=T-shirt+Blouse+Pants+Shoes+Jacket
 // test - Jacket : http://localhost/pape/cart.php?product=Jacket
 
+// getting JSON file into PHP
 $json = file_get_contents('cart.json');
+// decoding data in JSON
 $createCart = json_decode($json);
-//================================//
+
 $product = $_GET["product"];
 $buyList = explode( ' ' , $product);
 
-class BUY {
+class Buy {
+
+    public static function getInstance()
+    {
+        static $instance = null;
+        if(null === $instance)
+        {
+            $instance = new static();
+        }
+        return $instance;
+    }
     public $itemType;
     public $itemPrice;
     public $itemRegion;
     public $itemWeight;
-    // shoes 0.10 offer
-    public $shoesExist = false;
-    // jacket half offer
-    public $shirtExist = false;
-    public $blouseExist = false;
-    public $jacketExist = false;
-    // 10 dollars off shiiping 
-    // 2 > products total shipping price
+
+    // 10 dollars off shiiping for products >= 2 from total shipping price
     public $shippingDiscountOffer = false;
 
     public function searchForDiscount($usedItem)
@@ -33,8 +39,9 @@ class BUY {
 echo "<div align='left' >";
 echo '</br>'.'~~~~~~~~~~~~  Cart  ~~~~~~~~~~~~~'.'</br>';
 
-// created Object from BUY Class to store values inside
-$buyCart = new BUY();
+// created Instance from BUY Class to store values inside
+$buyCart = Buy::getInstance();
+
 // calulations data
 $Subtotal = 0;
 $Shipping = 0;
@@ -90,7 +97,7 @@ foreach($buyList as $value)
 {
     if($createCart->product->$value->discountExist == true)
     {
-        if($buyCart->shoesExist == true && $value == "Shoes" ) {
+        if($value == "Shoes" ) {
         /// shoes-discount
         /// incase there is multiple selection of shoeses, calculate thier discount and apply them once
         $shoeGroup += 1;
