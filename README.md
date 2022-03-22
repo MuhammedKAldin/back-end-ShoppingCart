@@ -13,10 +13,7 @@ challenge in PHP backend
 •  Example 2 `` localhost/cart.php?product=Shoes ``.
 
 -------------------------------------------------------
-# BE take-home coding challenge guidelines.
-Please organize, design, test, document, and deploy your code as if it were
-going into production.
-
+# coding challenge guidelines.
 ## Challenge Description
 
 ***Write a program that can price a cart of products from different countries, accept multiple products, combine offers, and display a total detailed invoice in USD as well.***
