@@ -1,4 +1,4 @@
-# Back-end-shoppingCart
+# Back-end-shoppingCart Rest API
 challenge in PHP backend
 
 
