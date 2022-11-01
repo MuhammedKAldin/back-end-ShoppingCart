@@ -1,6 +1,4 @@
 # Back-end-shoppingCart Rest API
-challenge in PHP backend
-
 
 <strong>Usage is via Simple Rest API :</strong>
 
